@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D189A62-2D15-4F8D-B666-BC21A8EBA33E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XPdotNET</RootNamespace>
+    <AssemblyName>XPdotNET</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllProgramsButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonXP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ColorManager.cs" />
+    <Compile Include="Connexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connexion.Designer.cs">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desktop.Designer.cs">
+      <DependentUpon>Desktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Machin.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartAppButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StartAppButton.Designer.cs">
+      <DependentUpon>StartAppButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartLinkButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StartMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StartMenu.Designer.cs">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskBarButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextUtil.cs" />
+    <Compile Include="ThreePicturePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TriStateButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XPForm.Designer.cs">
+      <DependentUpon>XPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XPToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="ButtonBase.resx">
+      <DependentUpon>ButtonBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButtonXP.resx">
+      <DependentUpon>ButtonXP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connexion.resx">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop.resx">
+      <DependentUpon>Desktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StartMenu.resx">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskBarButton.resx">
+      <DependentUpon>TaskBarButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPForm.resx">
+      <DependentUpon>XPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biginactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeinactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reduceinactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resizeinactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inactive_bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inactive_corner_bottomleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inactive_corner_bottomright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inactive_corner_upleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inactive_corner_upright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inactive_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inactive_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windowinactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testcorner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testcorner2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splitbar_idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splitbar_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splitbar_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splitbar_down_inv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splitbar_hover_inv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splitbar_idle_inv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taskbar_tray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tasktray2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tasktraygood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\big_active_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\big_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\big_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\big_idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows-XP-Classic-Wallpaper-576x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set_blue.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
